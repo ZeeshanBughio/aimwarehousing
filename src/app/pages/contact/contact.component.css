@@ -1,0 +1,19 @@
+.affilated-img {
+    padding: 0px 0px 0px 10px;
+    border-radius: 100px 100px 0px 100px;
+    background-color: white;
+}
+
+input {
+    border: solid #eae8e8 1px;
+}
+
+.storage h4,
+.become-affiliate h1 {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.padding-header {
+    color: #0f1762;
+}

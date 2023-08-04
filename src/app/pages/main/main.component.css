@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+::ng-deep .slick-prev {
+    display: none !important;
+}
+
+::ng-deep .slick-next {
+    display: none !important;
+}
+
+.aboutus-img {
+    border-radius: 100px 0px 0px 0px;
+    border-right: 10px solid white;
+    border-bottom: 10px solid white;
+}
+
+.powerful-image {
+    border-radius: 100px 100px 0px 100px;
+}
+
+.inventry-img {
+    border-radius: 100px 100px 100px 0px;
+}
+
+.offering-img {
+    border-radius: 100px 100px 0px 100px;
+}
+
+.affilated-img {
+    padding: 0px 0px 0px 10px;
+    border-radius: 100px 100px 0px 100px;
+    background-color: white;
+}
+
+.input-borders input {
+    border: solid #eae8e8 1px;
+}
+
+.input-borders select {
+    border: solid #eae8e8 1px;
+}
+
+.input-borders text {
+    border: solid #eae8e8 1px;
+}
+
+.uploadboxfile {
+    font-size: 9px;
+    text-align: center;
+    color: #949494;
+}
+
+::ng-deep .head-top {
+    position: absolute !important;
+}
+
+.hideTr {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .btn-upload {
+        height: 59px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .btn-upload {
+        height: 59px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn-upload {
+        height: 47px;
+    }
+}

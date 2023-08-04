@@ -1,0 +1,54 @@
+<div [ngClass]="{'head-top': router.url === '/', 'head-top-change': (router.url === '/contact' || router.url === '/quote')}">
+    <div class="above-nav container-1440">
+        <div class="phone-mail">
+            <ul>
+                <a href="tel:8329293513">
+                    <li><span class="fa fa-phone fa-fw"></span>832-929-3513</li>
+                </a>
+                <a href="mailto:info@aimwarehousing.com">
+                    <li><span class="fa fa-envelope fa-fw"></span>info@aimwarehousing.com</li>
+                </a>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <ul>
+                <a href="https://www.instagram.com/aimwarehousing/" target="_blank">
+                    <li><span class="fab fa-instagram fa-fw"></span></li>
+                </a>
+                <a href="https://www.facebook.com/AimWarehousing-219630596691617/" target="_blank">
+                    <li><span class="fab fa-facebook-square fa-fw"></span></li>
+                </a>
+                <!-- <a href="#">
+                    <li><span class="fab fa-linkedin fa-fw"></span></li>
+                </a> -->
+            </ul>
+        </div>
+    </div>
+    <hr class="hr-head">
+    <header class="head container-1440">
+        <nav class="navbar">
+            <div class="logo">
+                <img width="110px" src="assets/logo.png" alt="LOGO">
+                <!-- <span>We provide legal solutions for you !</span> -->
+            </div>
+            <div class="push-left">
+                <button id="menu-toggler" data-class="menu-active" class="hamburger" (click)="changeClassForActiveDeactive()">
+              <span class="hamburger-line hamburger-line-top"></span>
+              <span class="hamburger-line hamburger-line-middle"></span>
+              <span class="hamburger-line hamburger-line-bottom"></span>
+           </button>
+                <!--  Menu compatible with wp_nav_menu  -->
+                <ul id="primary-menu" class="menu nav-menu">
+                    <li class="menu-item mt-1"><a class="nav__link nav-link" [ngClass]="{'nav-link-active': router.url == '/'}" [routerLink]="['/']">Home</a></li>
+                    <!-- <li class="menu-item mt-1"><a class="nav__link nav-link" href="">Services</a></li> -->
+                    <!-- <li class="menu-item mt-1"><a class="nav__link nav-link" href="">Company</a></li> -->
+                    <!-- <li class="menu-item mt-1"><a class="nav__link nav-link" href="">New Resources</a></li> -->
+                    <li class="menu-item mt-1"><a class="nav__link nav-link" [routerLink]="['/contact']" [ngClass]="{'nav-link-active': router.url == '/contact'}">Contact</a></li>
+                    <!-- <li class="menu-item mt-1"><a class="nav__link nav-link" href="">Features</a></li> -->
+                    <li class="menu-item mt-1"><a class="nav__link" [routerLink]="['/quote']"><button class="btn-nav">Get A
+                       Quote</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
