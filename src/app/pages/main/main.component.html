@@ -406,7 +406,7 @@
   ></ngx-loading>
 </section>
 
-<section class="section7">
+<!-- <section class="section7">
   <div class="become-affiliate">
     <h1>Become Our AFFILIATES</h1>
   </div>
@@ -536,7 +536,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section8">
   <div class="container-1440">
@@ -544,6 +544,76 @@
       <h1>Testimonials</h1>
     </div>
     <swiper
+      [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+      class="mySwiper"
+      [navigation]="{
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }"
+    >
+      <ng-template swiperSlide>
+        <div class="testimonial-carousel">
+          <div class="testimonial">
+            <div class="profile-testimonial">
+              <div class="info-test text-center">
+                <p>
+                  The complete logistics solutions provided by AIM Warehousing
+                  have significantly streamlined our operations. Their
+                  technology offers a comprehensive approach to inventory
+                  management, order processing, and shipping, saving time and
+                  reducing errors. Choosing AIM Warehousing was one of the best
+                  moves ever made for our company.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-carousel">
+          <div class="testimonial">
+            <div class="profile-testimonial">
+              <div class="info-test text-center">
+                <p>
+                  AIM Warehousing has played a pivotal role in facilitating the
+                  expansion of our startup.Their adaptable solutions have
+                  empowered us to diversify our range of products without the
+                  burden of storage or fulfillment concerns. The customer
+                  support is proactive and prompt, guaranteeing a seamless
+                  experience consistently. The services provided by AIM
+                  Warehousing have emboldened us to set ambitious goals and
+                  strive for excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="testimonial-carousel">
+          <div class="testimonial">
+            <div class="profile-testimonial">
+              <div class="info-test text-center">
+                <p>
+                  I can't say enough about how pleased I am with AIM
+                  Warehousing's services. As an e-commerce business owner, I
+                  place a high value on accurate inventory management and timely
+                  order fulfillment. AIM Warehousing has outperformed my
+                  expectations by offering seamless connection, real-time
+                  updates, and lightning-fast shipping. My consumers are more
+                  satisfied than ever, and I am as well.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </swiper>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- <swiper
       [autoplay]="{ delay: 2500, disableOnInteraction: false }"
       class="mySwiper"
     >
@@ -563,6 +633,6 @@
           </div>
         </div>
       </ng-template>
-    </swiper>
+    </swiper> -->
   </div>
 </section>
